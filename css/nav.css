@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+
+}
+.navbar{
+     position: sticky;
+     top: 0;
+     left: 0;
+     width: 100%;
+     background: #f5f5f5;
+     z-index: 9;
+}
+.nav{
+    padding: 10px 10vw;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0%;
+}
+.brand-label{
+    height: 60px;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+}
+h1{
+    color: grey;
+    font-style: italic;
+    font-family: cursive, fantasy;
+    margin-left: 5%;
+
+    
+}
+.search{
+    width: 500px;
+    display: flex;
+}
+.search-box{
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #d1d1d1;
+    text-transform: capitalize;
+    background: none;
+    color: #a9a9a9;
+    outline: none;
+}
+.btn{
+    width: 20%;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #383838;
+    color:#fff;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.btn:hover{
+    opacity: 0.9;
+}
+.btn:active{
+    font-size: 12px;
+}
+.search-box::placeholder{
+    color: #a9a9a9;
+}
+.nav-items a{
+    margin-left: 20px;
+
+}
+.nav-items a img{
+    width: 30px;
+    
+}
+
+.nav-items a img:active{
+    opacity: 0.5;
+}
+.links-container{
+    width: 100%;
+    display: flex;
+    padding: 10px 10vw;
+    list-style: none;
+    border-top: 1px solid #d1d1d1;
+
+}
+.icon-img{
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+    margin-left: -10%;
+}
+
+.link{
+    padding: 0 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #202020;
+    transition: .5s;
+    font-weight: 400;
+    opacity: 0.7;
+    text-transform: capitalize;
+
+}
+i{
+    padding: 0 10px;
+    margin-left: -20%;
+    text-decoration: none;
+    color: #383838;
+    transition: .5s;
+
+}
+.link:hover{
+    opacity: 1;
+}
+.link:active{
+    font-size: small;
+    transition: 0.6s;
+}
+/*responsiveness*/
+@media(max-width:767px){
+    .nav{
+        display: block;
+    }
+    .navbar{
+        position: sticky;
+    }
+    h1{
+        margin-top: -12%;
+    }
+    .links-container{
+        margin-top: 0%;
+    }
+    .nav-items{
+        display: block;
+    
+        
+    }
+    .search-box{
+        width: 40%;
+        margin-top: 5px;
+    }
+    .btn{
+        margin-top: 5px;
+    }
+    .nav-items img{
+        margin:3%;
+        height:10%;
+        margin-top: 2%;
+        width: 100%;
+        float: right;
+     
+
+    }
+}

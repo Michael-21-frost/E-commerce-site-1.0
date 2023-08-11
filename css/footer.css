@@ -1,0 +1,143 @@
+footer{
+    position: relative;
+    width: 100%;
+    padding: 40px 10vw;
+    padding-bottom: 80px;
+    background: rgb(42, 46, 51)
+}
+.footer-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.footer-content h1{
+    font-size: 55px;
+    color: grey;
+    font-style: italic;
+    font-family: cursive, fantasy;
+    margin-left: -5%;
+
+}
+.footer-ul-container{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+.category{
+    width: 200px;
+    display: block;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:10px;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+.category-title{
+    grid-column: span 2;
+    text-transform: capitalize;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.category .footer-link{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    list-style: circle;
+    white-space: wrap;
+}
+li{
+    color: white;
+}
+li:hover{
+    color: rgba(128, 128, 128, 0.733);
+}
+.footer-link:hover{
+    color: rgba(128, 128, 128, 0.733);
+    
+}
+
+.footer-title, .info{
+    color: rgba(255, 255, 255, 0.75);
+    margin: 20px 0;
+    text-transform: capitalize;
+    text-align: center;
+    white-space: wrap;
+}
+.footer-title{
+    margin-top: 60px;
+    color: #fff;
+
+}
+hr{
+    width: 98vw;
+    margin-left: -12%;
+}
+
+i{
+    color: white;
+    cursor: pointer;
+
+}
+i:active{
+    font-size: smaller;
+
+}
+.footer-social-container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.social-link{
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+}
+.social-link:nth-child(1){
+    margin-left: 0;
+}
+.footer-credit{
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+span{
+    color: white;
+}
+.ref{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+@media(max-width:767px) {
+
+    .footer-content{
+        display: block;
+    }
+    .footer-content h1{
+        font-size: 30px;
+    }
+    .footer-ul-container{
+        font-size: 17px;
+        margin: 20px;
+        white-space: wrap;
+        display: block;
+    }
+    .footer-social-container{
+        display: block;
+    }
+}
